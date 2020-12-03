@@ -206,9 +206,9 @@ input {
   .nav {
     margin: 0 2rem;
   }
-  .mid_content {
-    margin: 3rem 1rem;
-  }
+ .mid_content {
+    margin: 50% 1rem;
+}
   .inp {
     display: flex;
     justify-content: center;
