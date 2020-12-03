@@ -1,220 +1,268 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-}
-.container {
-  background: url("./images/bg.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  margin-bottom: 2rem;
-}
-/* navbar styling */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 8rem;
-}
-.logo img {
-  height: 10rem;
-  width: 20rem;
-  filter: drop-shadow(0 0.5rem 1rem rgb(0, 0, 0));
-}
-.btn {
-  background-color: #e50914;
-  font-size: 1.8rem;
-  color: white;
-  padding: 0.9rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
 
-/* mid_content styling */
-.mid_content {
-  text-align: center;
-  color: white;
-  margin: 6rem 30rem;
-}
-.mid_content h1 {
-  font-size: 5rem;
-  text-shadow: 0.3rem 0.3rem 0.4rem #000000;
-}
-.mid_content h2 {
-  margin: 2rem 0;
+</head>
 
-  font-size: 3rem;
-  text-shadow: 0.3rem 0.3rem 0.6rem #000000;
-}
-.mid_content h3 {
-  margin: 2rem 0;
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.6rem #000000;
-}
-.inp {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-input {
-  width: 100%;
-  height: 5rem;
-  outline: none;
-  font-size: 2rem;
-}
-::placeholder {
-  font-size: 2rem;
-  align-items: center;
-  margin: 3rem 2rem;
-}
-.btn2 {
-  border: none;
-  outline: none;
-  height: 5rem;
-  background-color: #e50914;
-  color: white;
-  font-size: 1.9rem;
-  cursor: pointer;
-  width: 19rem;
-}
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
 
-.border {
-  width: 100%;
-  height: 2rem;
-  background-color: grey;
-}
+                <div class="signin">
+                    <button class="btn">Sign in</button>
+                </div>
 
-/* series styling */
+            </div>
 
-.button {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.hide {
-  display: none;
-  transition: all 0.5s ease;
-}
-.card_container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 4rem 2rem;
-}
-.card {
-  margin: 2rem;
-  height: 18rem;
-  width: 30rem;
-  background: linear-gradient(135deg, red, purple);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  transition: 0.5s all ease-in;
-}
-.card:hover {
-  height: 40rem;
-}
-.card_img {
-  transition: 0.5s all ease-in;
+            <div class="mid_content">
+                <h1 class="heading">Unlimited movies, TV shows and more.</h1>
+                <h2 class="subheading">Watch anywhere. Cancel anytime.
+                </h2>
+                <h3 class="lastheading">Ready to watch? Enter your email to create or restart your membership.
+                </h3>
+                <div class="inp">
+                    <input type="text" placeholder="Email address">
+                    <div><a href="#series"><button class="btn2">GET STARTED ></button></a></div>
+                </div>
 
-  width: 100%;
-}
-.card_text h1 {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in;
-}
-.card:hover .card_text h1 {
-  visibility: visible;
-  opacity: 1;
-}
-.card_img img {
-  width: 80%;
-}
-.card a {
-  color: white;
-  visibility: hidden;
-  opacity: 0;
-  text-decoration: none;
-  font-size: 1.4rem;
-  border: 0.2rem solid black;
-  padding: 0.4rem;
-  border-radius: 2rem;
-  background: none;
-  transition: all 0.5s ease-in;
-}
-.card:hover a {
-  visibility: visible;
-  opacity: 1;
-}
+            </div>
 
-@media (max-width: 1024px) {
-  html {
-    font-size: 57%;
-  }
-  .nav {
-    margin: 0 2rem;
-  }
-  .mid_content {
-    margin: 3rem 15rem;
-  }
-}
+        </div>
+        <!-- <div class="border">
 
-@media (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-  /* navbar styling */
-  .nav {
-    margin: 0 2rem;
-  }
-  .mid_content {
-    margin: 4rem 15rem;
-  }
-  .inp {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 2rem;
-  }
-  .btn2 {
-    margin: 2rem 0;
-  }
-}
+        </div> -->
 
-@media (max-width: 480px) {
-  html {
-    font-size: 40%;
-  }
-  .nav {
-    margin: 0 2rem;
-  }
-  .mid_content {
-    margin: 3rem 1rem;
-  }
-  .inp {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 2rem;
-  }
-  .btn2 {
-    margin: 2rem 0;
-  }
-}
+
+        <!-- <div class="series" id="series">
+            <h1>Action Movies</h1>
+            <div class="action">
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/81240831">
+                        <img src="/images/action1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/80230399">
+                        <img src="/images/action2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/80232655">
+                        <img src="/images/action3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/80196613">
+                        <img src="/images/action4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/81001887">
+                        <img src="/images/action5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="action1">
+                    <a target="__blank" href="https://www.netflix.com/in/title/80052541">
+                        <img src="/images/action6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="hide" class="hide">
+                <h1>Top Web Series</h1>
+
+                <div id="web" class="web_series">
+
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/80192098"><img
+                                src="/images/series1.jpg" alt=""></a>
+                    </div>
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/80057281"><img
+                                src="/images/series2.jpg" alt=""></a>
+                    </div>
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/80189685"><img
+                                src="/images/series3.jpg" alt=""></a>
+                    </div>
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/80115328"><img
+                                src="/images/series4.jpg" alt=""></a>
+                    </div>
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/70153404"><img
+                                src="/images/series5.jpg" alt=""></a>
+                    </div>
+                    <div class="series1">
+                        <a target="__blank" href="https://www.netflix.com/in/title/80189685"><img
+                                src="/images/series6.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="button" class="button">
+                <a href="#web"> <button id="show" class="btn">Show More</button>
+                </a>
+            </div>
+        </div> -->
+        <h1 style="text-align: center; font-size: 30px;">Top Web series</h1>
+
+        <div id="series" class="card_container">
+
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action1.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1> ALIVE.
+                    </h1>
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/81240831">Watch now</a>
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action2.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1> EXTRACTION.
+                    </h1>
+
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/80230399">Watch now</a>
+
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action3.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1> SHAFT.
+                    </h1>
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/80196613">Watch now</a>
+
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action4.jpeg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1> 12 STRONG.
+                    </h1>
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/80196613">Watch now</a>
+
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action5.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1>6 UNDERGROUND.
+                    </h1>
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/81001887">Watch now</a>
+
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="/images/action6.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <h1>THE LAST WITCH HUNTER
+                    </h1>
+                </div>
+                <a target="__blank" href="https://www.netflix.com/in/title/80052541">Watch now</a>
+
+            </div>
+        </div>
+        <div id="hide" class="hide">
+            <h1 style="text-align: center; font-size: 30px;">Top Web series</h1>
+            <div class="card_container ">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series1.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> MONEY HEIST.
+                        </h1>
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/80192098">Watch now</a>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series2.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> STRANGER THINGS.
+                        </h1>
+
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/80057281">Watch now</a>
+
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series3.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> THE WITCHER.
+                        </h1>
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/80189685">Watch now</a>
+
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series4.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> SACRED GAMES.
+                        </h1>
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/80115328">Watch now</a>
+
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series5.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> FRIENDS.
+                        </h1>
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/70153404">Watch now</a>
+
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/images/series6.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h1> 13 REASONS WHY.
+                        </h1>
+                    </div>
+                    <a target="__blank" href="https://www.netflix.com/in/title/80189685">Watch now</a>
+
+                </div>
+            </div>
+        </div>
+        <div id="button" class="button">
+            <a href="#hide"> <button id="show" class="btn">Show More</button>
+            </a>
+        </div>
+    </div>
+    <script src="/index.js">
+    </script>
+</body>
+
+</html>
